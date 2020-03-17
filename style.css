@@ -1,0 +1,17 @@
+*{margin:0;padding:0}
+
+body{ font-family: 'Courier New', Courier, monospace; }
+
+#container{
+    max-width:30%;
+    height:500px;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(92,79,92,1);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(92,79,92,1);
+    box-shadow: 0px 0px 12px 0px rgba(92,79,92,1);
+    margin:1rem auto;
+    text-align: center;
+    background:linear-gradient(#122159,#9561A1);
+    color:white
+}
+.temperature{ font-size:4rem }
+.icon img{ width:140px }
