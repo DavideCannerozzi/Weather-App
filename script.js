@@ -3,7 +3,7 @@
 const getCity = document.querySelector('.city'),
       getDate = document.querySelector('.date'),
       getIcon = document.querySelector('.icon'),
-      getTemp = document.querySelector('.temperature'),
+      getTemperature = document.querySelector('.temperature'),
       getDescription = document.querySelector('.description'),
       getHumidity = document.querySelector('.humidity'),
       getWind = document.querySelector('.wind')
@@ -25,7 +25,7 @@ if(navigator.geolocation){
             getCity.textContent = `${data.name}`
             getDate.textContent = `${myDate}`
             getIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"/>`
-            getTemp.innerHTML = `${Math.floor(data.main.temp - 273.15)}&deg`
+            getTemperature.innerHTML = `${Math.floor(data.main.temp - 273.15)}&deg`
             getDescription.textContent = `${data.weather[0].main}`
             getHumidity.innerHTML = `Humidity: ${data.main.humidity}%`
             getWind.textContent = `Wind:${Math.floor(data.wind.speed * 3.6)}km/h`
